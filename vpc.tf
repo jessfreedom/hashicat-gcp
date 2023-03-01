@@ -2,7 +2,7 @@ module "network" {
   source  = "app.terraform.io/jess-freedom/network/google"
   version = "3.4.0"
   network_name = "jess-network"
-  project_id = "ws-b98f8ayYXe51343m"
+  project_id = var.project
 
   # insert required variables here
 
