@@ -52,7 +52,8 @@ resource "google_compute_instance" "hashicat" {
   labels = {
     department = "devops"
     billable   = true
-  }  machine_type = var.machine_type
+  } 
+   machine_type = var.machine_type
 
   boot_disk {
     initialize_params {
@@ -71,10 +72,6 @@ resource "google_compute_instance" "hashicat" {
   }
 
   tags = ["http-server"]
-
-  labels = {
-    name = "hashicat"
-  }
 
 }
 
